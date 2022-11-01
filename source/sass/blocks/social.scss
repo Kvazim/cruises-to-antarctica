@@ -1,5 +1,57 @@
+.social {
+  align-self: baseline;
+}
+
 .social__list {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 27px;
+  margin: 0;
+  padding: 0;
 }
+
+.social__link {
+  display: block;
+  padding: 10px;
+}
+
+.social__icon {
+  fill: $color-alice-blue;
+  color: $color-alice-blue;
+
+  &--ok {
+    width: 12px;
+    height: 20px;
+  }
+
+  &--dzen {
+    width: 20px;
+    height: 20px;
+  }
+
+  &--reddit {
+    width: 20px;
+    height: 20px;
+  }
+
+  @include vp-1023 {
+    &--ok {
+      width: 10px;
+      height: 16px;
+    }
+
+    &--dzen {
+      width: 17px;
+      height: 16px;
+    }
+
+    &--reddit {
+      width: 17px;
+      height: 16px;
+    }
+  }
+}
+
+// .social__icon svg + path {
+//   fill: $color-alice-blue;
+// }

@@ -9,6 +9,14 @@
   cursor: pointer;
   overflow: hidden;
 
+  @include hover-focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @include vp-767 {
     display: block;
   }
@@ -47,61 +55,6 @@
   right: 15px;
 }
 
-// .toggle__bar {
-//   display: inline-block;
-//   position: absolute;
-//   top: 50%;
-//   transform: translateY(-50%);
-// }
-
-// .toggle__bar::before,
-// .toggle__bar::after {
-//   content: "";
-//   display: block;
-//   position: absolute;
-// }
-
-// .toggle__bar,
-// .toggle__bar::before,
-// .toggle__bar::after {
-//   width: 100%;
-//   height: 2px;
-//   left: 0;
-//   background-color: $color-alice-blue;
-//   transition: transform 0.3s linear;
-// }
-
-// .toggle__bar::before {
-//   top: -4px;
-// }
-
-// .toggle__bar::after {
-//   bottom: -4px;
-// }
-
-// .is-active .toggle__bar,
-// .is-active .toggle__bar::before,
-// .is-active .toggle__bar::after {
-//   background-color: $color-tangaroa;
-// }
-
-// .is-active .toggle__bar::after {
-//   top: 50%;
-//   transform: translateY(-50%) rotate(-45deg);
-//   transition: transform 0.3s linear;
-// }
-
-// .is-active .toggle__bar::before {
-//   top: 50%;
-//   transform: translateY(-50%) rotate(45deg);
-//   transition: transform 0.3s linear;
-// }
-
-// .is-active .toggle__bar {
-//   background-color: transparent;
-//   transition: transform 0.3s linear;
-// }
-
-.no--js .toggle {
+.nojs .toggle {
   display: none;
 }

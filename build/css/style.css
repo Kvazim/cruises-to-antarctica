@@ -792,15 +792,14 @@ button,
 }
 
 .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 1fr;
+  grid-template-columns: 100px 1fr;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-items: end;
   padding: 35px 0;
 }
 
@@ -833,7 +832,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 33px;
+  gap: 30px;
   margin: 0;
   padding: 0;
   -webkit-box-align: center;
@@ -846,12 +845,21 @@ button,
 }
 
 .navigation__link {
+  display: block;
   padding: 10px;
   font-family: "Motserat", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
   color: #f9fbfd;
+}
+
+.navigation__link.focus-visible:focus {
+  opacity: 0.6;
+}
+
+.navigation__link:active {
+  opacity: 0.3;
 }
 
 .navigation.is-open {
@@ -870,8 +878,9 @@ button,
   transition: transform 1s linear, -webkit-transform 1s linear;
 }
 
-.no--js .navigation {
+.nojs .navigation {
   position: static;
+  width: 100%;
 }
 
 .is-open .navigation-wrapper {
@@ -888,6 +897,14 @@ button,
   border: none;
   cursor: pointer;
   overflow: hidden;
+}
+
+.toggle.focus-visible:focus {
+  opacity: 0.6;
+}
+
+.toggle:active {
+  opacity: 0.3;
 }
 
 .toggle__icon {
@@ -923,7 +940,7 @@ button,
   right: 15px;
 }
 
-.no--js .toggle {
+.nojs .toggle {
   display: none;
 }
 
@@ -961,22 +978,73 @@ button,
 }
 
 .footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 120px;
+  grid-template-columns: 1fr 120px;
 }
 
 .footer__navigation {
   padding: 0;
+  justify-items: start;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.footer__navigation .navigation__icon {
+  margin-bottom: 30px;
+}
+
+.footer__navigation .navigation__list {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.footer__navigation .navigation__link {
+  color: #f9fbfd;
+}
+
+.social {
+  -ms-flex-item-align: baseline;
+  align-self: baseline;
 }
 
 .social__list {
+  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 27px;
+  margin: 0;
+  padding: 0;
+}
+
+.social__link {
+  display: block;
+  padding: 10px;
+}
+
+.social__icon {
+  fill: #f9fbfd;
+  color: #f9fbfd;
+}
+
+.social__icon--ok {
+  width: 12px;
+  height: 20px;
+}
+
+.social__icon--dzen {
+  width: 20px;
+  height: 20px;
+}
+
+.social__icon--reddit {
+  width: 20px;
+  height: 20px;
 }
 
 /* @mixin hover-focus {
@@ -1036,12 +1104,22 @@ button,
   }
 
   .navigation {
+    -ms-grid-columns: 65px 1fr;
+    grid-template-columns: 65px 1fr;
     padding: 30px 0;
+  }
+
+  .navigation__logo {
+    margin-right: 25px;
   }
 
   .navigation__icon {
     width: 38px;
     height: 20px;
+  }
+
+  .navigation__list {
+    gap: 28px;
   }
 
   .navigation__link {
@@ -1063,6 +1141,30 @@ button,
   .promo__subtitle {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .footer__navigation {
+    padding: 0;
+  }
+
+  .footer__navigation .navigation__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .social__icon--ok {
+    width: 10px;
+    height: 16px;
+  }
+
+  .social__icon--dzen {
+    width: 17px;
+    height: 16px;
+  }
+
+  .social__icon--reddit {
+    width: 17px;
+    height: 16px;
   }
 }
 
@@ -1149,6 +1251,23 @@ button,
     font-size: 16px;
     line-height: 23px;
   }
+
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer .container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .footer__navigation {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    margin-bottom: 30px;
+    padding: 0;
+  }
 }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -1160,5 +1279,13 @@ button,
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
+  }
+
+  .navigation__link:hover:not(.focus-visible) {
+    opacity: 0.6;
+  }
+
+  .toggle:hover:not(.focus-visible) {
+    opacity: 0.6;
   }
 }
