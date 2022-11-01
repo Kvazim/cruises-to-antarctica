@@ -1,0 +1,107 @@
+.toggle {
+  display: none;
+  position: relative;
+  width: 24px;
+  height: 14px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.toggle__icon {
+  display: block;
+
+  &--basic {
+    width: 24px;
+    height: 14px;
+    stroke: $color-alice-blue;
+    stroke-width: 2;
+  }
+
+  &--active {
+    display: none;
+    width: 15px;
+    height: 15px;
+    stroke: $color-tangaroa;
+    stroke-width: 2;
+  }
+}
+
+.is-active .toggle__icon--basic {
+  display: none;
+}
+
+.is-active .toggle__icon--active {
+  display: block;
+}
+
+.is-open .toggle {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+
+// .toggle__bar {
+//   display: inline-block;
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
+
+// .toggle__bar::before,
+// .toggle__bar::after {
+//   content: "";
+//   display: block;
+//   position: absolute;
+// }
+
+// .toggle__bar,
+// .toggle__bar::before,
+// .toggle__bar::after {
+//   width: 100%;
+//   height: 2px;
+//   left: 0;
+//   background-color: $color-alice-blue;
+//   transition: transform 0.3s linear;
+// }
+
+// .toggle__bar::before {
+//   top: -4px;
+// }
+
+// .toggle__bar::after {
+//   bottom: -4px;
+// }
+
+// .is-active .toggle__bar,
+// .is-active .toggle__bar::before,
+// .is-active .toggle__bar::after {
+//   background-color: $color-tangaroa;
+// }
+
+// .is-active .toggle__bar::after {
+//   top: 50%;
+//   transform: translateY(-50%) rotate(-45deg);
+//   transition: transform 0.3s linear;
+// }
+
+// .is-active .toggle__bar::before {
+//   top: 50%;
+//   transform: translateY(-50%) rotate(45deg);
+//   transition: transform 0.3s linear;
+// }
+
+// .is-active .toggle__bar {
+//   background-color: transparent;
+//   transition: transform 0.3s linear;
+// }
+
+.no--js .toggle {
+  display: none;
+}

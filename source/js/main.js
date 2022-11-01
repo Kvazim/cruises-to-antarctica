@@ -1,5 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import './modules/toggle-button/togle-button';
+import {removeNoJs} from './modules/nojs/nojs';
 
 // ---------------------------------
 
@@ -19,6 +21,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
   });
 });
+
+removeNoJs();
 
 // ---------------------------------
 

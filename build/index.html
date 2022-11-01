@@ -1,64 +1,174 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Круизы, круизы в антарктику, путешествия на край Земли, мир айсбергов и пингвинов, лайнер, туры, экскурсии, раннее бронирование.">
+  <title>Круизы в Антарктику</title>
+  <meta name="theme-color" content="#011C40" />
+  <meta name="msapplication-config" content="./img/favicon/browserconfig.xml" />
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" href="./img/favicon/apple-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="./fonts/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="top-wrapper">
+      <header class="header no--js">
+        <div class="container">
+          <nav class="header__navigation navigation is-open">
+            <a class="navigation__logo">
+              <img class="navigation__icon navigation__icon--basic" src="./img/svg/logo.svg"
+                alt="Логотип компании, переход на главную страницу">
+              <img class="navigation__icon navigation__icon--menu" src="./img/svg/logo-menu.svg"
+                alt="Логотип компании, переход на главную страницу">
+            </a>
+            <div class="navigation-wrapper">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Преимущества</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Направления</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Ближайшие круизы</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <button class="navigation__toggle toggle" type="button" aria-label="Открыть/скрыть меню.">
+              <svg class="toggle__icon toggle__icon--basic" width="24" height="14" viewBox="0 0 24 14" role="img" aria-hidden="true">
+                <use xlink:href="./img/sprite_auto.svg#burger"></use>
+              </svg>
+              <svg class="toggle__icon toggle__icon--active" width="15" height="15" viewBox="0 0 15 15" role="img" aria-hidden="true">
+                <use xlink:href="./img/sprite_auto.svg#icon-close"></use>
+              </svg>
+              <!-- <span class="toggle__bar"></span> -->
+            </button>
+          </nav>
+        </div>
       </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-          </div>
+      <section class="promo">
+        <div class="container">
+          <h1 class="promo__title">Круизы в Антарктику</h1>
+          <p class="promo__subtitle">Волшебный мир айсбергов и пингвинов</p>
+        </div>
+      </section>
+    </div>
+    <main>
+      <section class="intro">
+        <div class="container">
+          <h1>Тестовая страница.</h1>
+          <p>На данной странице показан пример модальных окон.</p>
+          <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
+          </p>
+          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
+          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="navigation footer__navigation">
+          <a class="navigation__logo">
+            <svg width="70" height="38" role="img" aria-hidden="true" viewBox="0 0 70 38">
+              <use xlink:href="./img/sprite_auto.svg#logo"></use>
+            </svg>
+            <span class="visually-hidden">Логотип компании, переход на главную страницу</span>
+          </a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Преимущества</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Направления</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Ближайшие круизы</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="social">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="12" height="20" viewBox="0 0 12 20" role="img" aria-hidden="true">
+                  <use xlink:href="./img/sprite_auto.svg#ok"></use>
+                </svg>
+                <span class="visually-hidden">Мы в одноклассниках</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20" role="img" aria-hidden="true">
+                  <use xlink:href="./img/sprite_auto.svg#dzen"></use>
+                </svg>
+                <span class="visually-hidden">Мы на дзене</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20" role="img" aria-hidden="true">
+                  <use xlink:href="./img/sprite_auto.svg#reddit"></use>
+                </svg>
+                <span class="visually-hidden">Мы на реддите</span>
+              </a>
+            </li>
+          </ul>
         </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+  </div>
 
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+  <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

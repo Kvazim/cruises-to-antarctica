@@ -1,0 +1,29 @@
+.top-wrapper {
+  background-color: $color-tangaroa;
+  background-image: url("../img/fone/main-fon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  @media (min-width: 1024px) {
+    @include retina {
+      background-image: url("../img/fone/main-fon@2x.jpg");
+    }
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/fone/main-fon-tablet.jpg");
+
+    @include retina {
+      background-image: url("../img/fone/main-fon-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/fone/main-fon-mobile.jpg");
+
+    @include retina {
+      background-image: url("../img/fone/main-fon-mobile@2x.jpg");
+    }
+  }
+}

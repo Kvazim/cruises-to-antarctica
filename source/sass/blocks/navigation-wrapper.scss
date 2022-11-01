@@ -1,0 +1,12 @@
+.navigation-wrapper {
+  @include vp-767 {
+    display: none;
+    width: 100%;
+    margin-top: 43px;
+    margin-left: -10px;
+  }
+}
+
+.is-open .navigation-wrapper {
+  display: block;
+}
