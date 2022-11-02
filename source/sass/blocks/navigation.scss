@@ -1,8 +1,6 @@
 .navigation {
   display: grid;
   grid-template-columns: 100px 1fr;
-  align-items: center;
-  justify-items: end;
   padding: 35px 0;
 
   @include vp-1023 {
@@ -28,10 +26,8 @@
   display: block;
   width: 70px;
   height: 38px;
-
-  &--menu {
-    display: none;
-  }
+  fill: $color-alice-blue;
+  color: $color-alice-blue;
 
   @include vp-1023 {
     width: 38px;
@@ -44,12 +40,8 @@
   }
 }
 
-.is-open .navigation__icon--basic {
-  display: none;
-}
-
-.is-open .navigation__icon--menu {
-  display: block;
+.is-open .navigation__icon {
+  fill: $color-tangaroa;
 }
 
 .navigation__list {
@@ -59,6 +51,7 @@
   margin: 0;
   padding: 0;
   align-items: center;
+  justify-content: flex-end;
 
   @include vp-1023 {
     gap: 28px;

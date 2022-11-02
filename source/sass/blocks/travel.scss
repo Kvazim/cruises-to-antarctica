@@ -1,0 +1,47 @@
+.travel {
+  padding-top: 120px;
+  padding-bottom: 145px;
+
+  @include vp-1023 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 65px;
+    padding-bottom: 85px;
+  }
+}
+
+.travel .container {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 88px;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr 329px;
+    gap: 35px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+.travel__image {
+  display: block;
+  width: 560px;
+  height: 301px;
+  object-fit: contain;
+
+  @include vp-1023 {
+    width: 324px;
+    height: 175px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    height: 156px;
+  }
+}

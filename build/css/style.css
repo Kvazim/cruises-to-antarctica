@@ -435,7 +435,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Motserat", "Arial", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   color: #011c40;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -785,6 +785,8 @@ button,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .header {
@@ -796,10 +798,6 @@ button,
   display: grid;
   -ms-grid-columns: 100px 1fr;
   grid-template-columns: 100px 1fr;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  justify-items: end;
   padding: 35px 0;
 }
 
@@ -812,18 +810,12 @@ button,
   display: block;
   width: 70px;
   height: 38px;
+  fill: #f9fbfd;
+  color: #f9fbfd;
 }
 
-.navigation__icon--menu {
-  display: none;
-}
-
-.is-open .navigation__icon--basic {
-  display: none;
-}
-
-.is-open .navigation__icon--menu {
-  display: block;
+.is-open .navigation__icon {
+  fill: #011c40;
 }
 
 .navigation__list {
@@ -838,6 +830,9 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .navigation__item {
@@ -847,7 +842,7 @@ button,
 .navigation__link {
   display: block;
   padding: 10px;
-  font-family: "Motserat", "Arial", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
@@ -890,13 +885,13 @@ button,
 .toggle {
   display: none;
   position: relative;
+  justify-self: flex-end;
   width: 24px;
   height: 14px;
   padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  overflow: hidden;
 }
 
 .toggle.focus-visible:focus {
@@ -954,7 +949,7 @@ button,
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
-  font-family: "Motserat", "Arial", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 700;
   line-height: 66px;
@@ -964,11 +959,283 @@ button,
 .promo__subtitle {
   margin: 0;
   padding: 0;
-  font-family: Montserrat;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   color: #f9fbfd;
+}
+
+.travel {
+  padding-top: 120px;
+  padding-bottom: 145px;
+}
+
+.travel .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.1fr;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 88px;
+}
+
+.travel__image {
+  display: block;
+  width: 560px;
+  height: 301px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.description {
+  padding-top: 66px;
+}
+
+.description__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.description__subtitle {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: url("../img/fone/advanteges.jpg"), rgba(227, 236, 246, 0.9);
+  background-blend-mode: color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+}
+
+.advantages__title {
+  margin-bottom: 60px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.advantages__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  list-style-type: none;
+  padding: 30px;
+  padding-bottom: 50px;
+  background-color: #f9fbfd;
+}
+
+.advantages__item svg {
+  display: block;
+  margin-bottom: 25px;
+  fill: #011c40;
+  color: #011c40;
+}
+
+.advantages__item--battleship svg {
+  width: 27px;
+  height: 32px;
+}
+
+.advantages__item--duble-check svg {
+  width: 38px;
+  height: 32px;
+}
+
+.advantages__item--ship svg {
+  width: 44px;
+  height: 32px;
+}
+
+.advantages__item h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.advantages__item p {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cruises {
+  padding: 95px 15px 120px;
+}
+
+.cruises__title {
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: center;
+  color: #011c40;
+}
+
+.cruises__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.cruises__item {
+  list-style-type: none;
+}
+
+.cards {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.cards.focus-visible:focus figure {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.cards.focus-visible:focus div {
+  -webkit-transform: perspective(600px) rotateY(0);
+  transform: perspective(600px) rotateY(0);
+}
+
+.cards figure,
+.cards div {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.cards figure {
+  display: block;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: perspective(600px) rotateY(0);
+  transform: perspective(600px) rotateY(0);
+}
+
+.cards figcaption {
+  display: block;
+  position: relative;
+  left: 30px;
+  bottom: 30px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #f9fbfd;
+}
+
+.cards img {
+  width: 260px;
+  height: 386px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.cards h3 {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #f9fbfd;
+}
+
+.cards div {
+  padding: 35px 25px;
+  background-color: #011c40;
+  -webkit-box-shadow: 0 4px 35px 0 rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 35px 0 rgba(1, 28, 64, 0.15);
+  -webkit-transform: perspective(600px) rotateY(180deg);
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.cards h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #f9fbfd;
+}
+
+.cards p {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #f9fbfd;
+}
+
+.cards a {
+  display: block;
+  padding: 14px 47px;
+  background-color: #f9fbfd;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #011c40;
+}
+
+.cards ul {
+  margin: 0;
+  padding: 0;
+}
+
+.cards li {
+  list-style-type: none;
 }
 
 .footer {
@@ -992,7 +1259,7 @@ button,
   align-items: baseline;
 }
 
-.footer__navigation .navigation__icon {
+.footer__navigation .navigation__logo {
   margin-bottom: 30px;
 }
 
@@ -1025,6 +1292,14 @@ button,
 .social__link {
   display: block;
   padding: 10px;
+}
+
+.social__link.focus-visible:focus {
+  opacity: 0.6;
+}
+
+.social__link:active {
+  opacity: 0.3;
 }
 
 .social__icon {
@@ -1092,6 +1367,10 @@ button,
   .top-wrapper {
     background-image: url("../img/fone/main-fon@2x.jpg");
   }
+
+  .advantages {
+    background-image: url("../img/fone/advanteges@2x.jpg"), rgba(227, 236, 246, 0.9);
+  }
 }
 
 @media (max-width: 1023px) {
@@ -1100,6 +1379,8 @@ button,
   }
 
   .top-wrapper {
+    -webkit-filter: none;
+    filter: none;
     background-image: url("../img/fone/main-fon-tablet.jpg");
   }
 
@@ -1141,6 +1422,69 @@ button,
   .promo__subtitle {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .travel {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .travel .container {
+    -ms-grid-columns: 1fr 329px;
+    grid-template-columns: 1fr 329px;
+    gap: 35px;
+  }
+
+  .travel__image {
+    width: 324px;
+    height: 175px;
+  }
+
+  .description {
+    padding-top: 0;
+  }
+
+  .description__title {
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .advantages {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .advantages__title {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .advantages__list {
+    gap: 30px;
+  }
+
+  .advantages__item {
+    padding: 26px 15px 25px 20px;
+  }
+
+  .advantages__item--battleship svg {
+    width: 21px;
+    height: 26px;
+  }
+
+  .advantages__item--duble-check svg {
+    width: 27px;
+    height: 26px;
+  }
+
+  .advantages__item--ship svg {
+    width: 36px;
+    height: 26px;
+  }
+
+  .advantages__item h3 {
+    line-height: 25px;
   }
 
   .footer__navigation {
@@ -1252,6 +1596,52 @@ button,
     line-height: 23px;
   }
 
+  .travel {
+    padding-top: 65px;
+    padding-bottom: 85px;
+  }
+
+  .travel .container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .travel__image {
+    width: 290px;
+    height: 156px;
+  }
+
+  .description__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .advantages {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .advantages__title {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .advantages__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .advantages__item {
+    padding: 25px 15px 25px 20px;
+  }
+
+  .advantages__item h3 {
+    width: 198px;
+  }
+
   .footer {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -1286,6 +1676,20 @@ button,
   }
 
   .toggle:hover:not(.focus-visible) {
+    opacity: 0.6;
+  }
+
+  .cards:hover:not(.focus-visible) figure {
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+    transform: perspective(600px) rotateY(-180deg);
+  }
+
+  .cards:hover:not(.focus-visible) div {
+    -webkit-transform: perspective(600px) rotateY(0);
+    transform: perspective(600px) rotateY(0);
+  }
+
+  .social__link:hover:not(.focus-visible) {
     opacity: 0.6;
   }
 }

@@ -13,6 +13,14 @@
 .social__link {
   display: block;
   padding: 10px;
+
+  @include hover-focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__icon {
@@ -51,7 +59,3 @@
     }
   }
 }
-
-// .social__icon svg + path {
-//   fill: $color-alice-blue;
-// }

@@ -1,0 +1,27 @@
+.cruises {
+  padding: 95px 15px 120px;
+}
+
+.cruises__title {
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  font-family: $ff-motserrat;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: center;
+  color: $color-tangaroa;
+}
+
+.cruises__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.cruises__item {
+  list-style-type: none;
+}

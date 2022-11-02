@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
+  filter: drop-shadow(0 4px 4px $color-default-black-shadow);
 
   @media (min-width: 1024px) {
     @include retina {
@@ -12,6 +13,7 @@
   }
 
   @include vp-1023 {
+    filter: none;
     background-image: url("../img/fone/main-fon-tablet.jpg");
 
     @include retina {

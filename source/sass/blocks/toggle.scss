@@ -1,13 +1,13 @@
 .toggle {
   display: none;
   position: relative;
+  justify-self: flex-end;
   width: 24px;
   height: 14px;
   padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  overflow: hidden;
 
   @include hover-focus {
     opacity: 0.6;

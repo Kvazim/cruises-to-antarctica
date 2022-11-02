@@ -39,7 +39,7 @@ const sprite = () =>
 */
 
 const createWebp = () => {
-  const root = '';
+  const root = 'contents/';
   return gulp
       .src(`source/img/${root}**/*.{png,jpg}`)
       .pipe(webp({quality: 90}))

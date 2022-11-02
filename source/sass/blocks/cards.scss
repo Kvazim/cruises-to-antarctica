@@ -1,0 +1,111 @@
+.cards {
+  display: block;
+  position: relative;
+  cursor: pointer;
+
+  @include hover-focus {
+    & figure {
+      transform: perspective(600px) rotateY(-180deg);
+    }
+
+    & div {
+      transform: perspective(600px) rotateY(0);
+    }
+  }
+}
+
+.cards figure,
+.cards div {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease;
+}
+
+.cards figure {
+  display: block;
+  margin: 0;
+  padding: 0;
+  transform: perspective(600px) rotateY(0);
+}
+
+.cards figcaption {
+  display: block;
+  position: relative;
+  left: 30px;
+  bottom: 30px;
+  font-family: $ff-motserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: $color-alice-blue;
+}
+
+.cards img {
+  width: 260px;
+  height: 386px;
+  object-fit: contain;
+}
+
+.cards h3 {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: $ff-motserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: $color-alice-blue;
+}
+
+.cards div {
+  padding: 35px 25px;
+  background-color: $color-tangaroa;
+  box-shadow: 0 4px 35px 0 $color-tangaroa-shadow;
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.cards h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: $ff-motserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: $color-alice-blue;
+}
+
+.cards p {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: $ff-motserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $color-alice-blue;
+}
+
+.cards a {
+  display: block;
+  padding: 14px 47px;
+  background-color: $color-alice-blue;
+  font-family: $ff-motserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: $color-tangaroa;
+}
+
+.cards ul {
+  margin: 0;
+  padding: 0;
+}
+
+.cards li {
+  list-style-type: none;
+}
