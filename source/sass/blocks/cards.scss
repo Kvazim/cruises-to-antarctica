@@ -16,7 +16,6 @@
 
 .cards figure,
 .cards div {
-  position: absolute;
   width: 100%;
   min-height: 100%;
   height: auto;
@@ -27,14 +26,16 @@
 
 .cards figure {
   display: block;
+  position: relative;
   margin: 0;
   padding: 0;
   transform: perspective(600px) rotateY(0);
+  transition: all $trans-default;
 }
 
 .cards figcaption {
   display: block;
-  position: relative;
+  position: absolute;
   left: 30px;
   bottom: 30px;
   font-family: $ff-motserrat;
@@ -47,7 +48,7 @@
 .cards img {
   width: 260px;
   height: 386px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .cards h3 {
@@ -62,10 +63,14 @@
 }
 
 .cards div {
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 35px 25px;
   background-color: $color-tangaroa;
   box-shadow: 0 4px 35px 0 $color-tangaroa-shadow;
   transform: perspective(600px) rotateY(180deg);
+  transition: all $trans-default;
 }
 
 .cards h4 {

@@ -1135,7 +1135,6 @@ button,
 
 .cards figure,
 .cards div {
-  position: absolute;
   width: 100%;
   min-height: 100%;
   height: auto;
@@ -1151,15 +1150,19 @@ button,
 
 .cards figure {
   display: block;
+  position: relative;
   margin: 0;
   padding: 0;
   -webkit-transform: perspective(600px) rotateY(0);
   transform: perspective(600px) rotateY(0);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .cards figcaption {
   display: block;
-  position: relative;
+  position: absolute;
   left: 30px;
   bottom: 30px;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -1172,8 +1175,8 @@ button,
 .cards img {
   width: 260px;
   height: 386px;
-  -o-object-fit: contain;
-  object-fit: contain;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .cards h3 {
@@ -1188,12 +1191,18 @@ button,
 }
 
 .cards div {
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 35px 25px;
   background-color: #011c40;
   -webkit-box-shadow: 0 4px 35px 0 rgba(1, 28, 64, 0.15);
   box-shadow: 0 4px 35px 0 rgba(1, 28, 64, 0.15);
   -webkit-transform: perspective(600px) rotateY(180deg);
   transform: perspective(600px) rotateY(180deg);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .cards h4 {
