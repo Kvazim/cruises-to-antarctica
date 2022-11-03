@@ -30,7 +30,7 @@
   margin: 0;
   padding: 0;
   transform: perspective(600px) rotateY(0);
-  transition: all $trans-default;
+  transition: all $trans-600;
 }
 
 .cards figcaption {
@@ -70,8 +70,9 @@
   padding: 30px 25px;
   background-color: $color-tangaroa;
   box-shadow: 0 4px 35px 0 $color-tangaroa-shadow;
+  overflow: auto;
   transform: perspective(600px) rotateY(180deg);
-  transition: all $trans-default;
+  transition: all $trans-600;
 }
 
 .cards h4 {
