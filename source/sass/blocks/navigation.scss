@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 100px 1fr;
   padding: 35px 0;
+  transition: all $trans-600;
 
   @include vp-1023 {
     grid-template-columns: 65px 1fr;
@@ -108,7 +109,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  transition: transform 1s linear;
+  transition: all $trans-600;
 }
 
 .nojs .navigation {
