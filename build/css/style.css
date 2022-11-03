@@ -1180,7 +1180,7 @@ button,
 
 .cards h3 {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 11px;
   padding: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 18px;
@@ -1191,9 +1191,10 @@ button,
 
 .cards div {
   position: absolute;
+  height: 100%;
   top: 0;
   left: 0;
-  padding: 35px 25px;
+  padding: 30px 25px;
   background-color: #011c40;
   -webkit-box-shadow: 0 4px 35px 0 rgba(1, 28, 64, 0.15);
   box-shadow: 0 4px 35px 0 rgba(1, 28, 64, 0.15);
@@ -1206,7 +1207,7 @@ button,
 
 .cards h4 {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   padding: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
@@ -1217,7 +1218,7 @@ button,
 
 .cards p {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
@@ -1228,7 +1229,8 @@ button,
 
 .cards a {
   display: block;
-  padding: 14px;
+  margin-top: 22px;
+  padding: 10px;
   background-color: #f9fbfd;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
