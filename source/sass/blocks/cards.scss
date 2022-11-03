@@ -19,7 +19,7 @@
   width: 100%;
   min-height: 100%;
   height: auto;
-  overflow: hidden;
+  // overflow: hidden;
   backface-visibility: hidden;
   transition: transform 0.5s ease;
 }
@@ -97,13 +97,14 @@
 
 .cards a {
   display: block;
-  padding: 14px 47px;
+  padding: 14px;
   background-color: $color-alice-blue;
   font-family: $ff-motserrat;
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
   color: $color-tangaroa;
+  text-align: center;
 }
 
 .cards ul {

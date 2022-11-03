@@ -1138,7 +1138,6 @@ button,
   width: 100%;
   min-height: 100%;
   height: auto;
-  overflow: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transition: -webkit-transform 0.5s ease;
@@ -1229,13 +1228,14 @@ button,
 
 .cards a {
   display: block;
-  padding: 14px 47px;
+  padding: 14px;
   background-color: #f9fbfd;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
   color: #011c40;
+  text-align: center;
 }
 
 .cards ul {
