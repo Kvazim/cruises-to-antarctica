@@ -37,16 +37,16 @@
             <div class="navigation-wrapper">
               <ul class="navigation__list">
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">Преимущества</a>
+                  <a class="navigation__link" href="#advantages" data-scroll>Преимущества</a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">Направления</a>
+                  <a class="navigation__link" href="#cruises" data-scroll>Направления</a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">Ближайшие круизы</a>
+                  <a class="navigation__link" href="#cruises" data-scroll>Ближайшие круизы</a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">Контакты</a>
+                  <a class="navigation__link" href="#contacts" data-scroll>Контакты</a>
                 </li>
               </ul>
             </div>
@@ -86,7 +86,7 @@
           </picture>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <div class="container">
           <h2 class="advantages__title">Преимущества</h2>
           <ul class="advantages__list">
@@ -117,7 +117,7 @@
           </ul>
         </div>
       </section>
-      <section class="cruises">
+      <section class="cruises" id="cruises">
         <div class="container">
           <h2 class="cruises__title">Ближайшие круизы</h2>
           <ul class="cruises__list">
@@ -394,7 +394,8 @@
             <form action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
               <p>Оставьте заявку<br> и мы свяжемся с вами в ближайшее время</p>
               <label class="visually-hidden" for="user">Введите Ваше имя</label>
-              <input type="text" name="user" placeholder="имя" id="user" minlength="1" pattern="[A-Za-zА-Яа-яЁё]+$" required>
+              <input type="text" name="user" placeholder="имя" id="user" minlength="1" pattern="[A-Za-zА-Яа-яЁё]+$"
+                required>
               <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
               <input type="tel" name="tel" id="tel" placeholder="телефон" pattern="\+?[0-9\s\-\(\)]+" required>
               <label class="visually-hidden" for="email">Введите Ваш email</label>
@@ -409,29 +410,30 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <h2 class="visually-hidden">Наши контакты</h2>
           <div class="contacts__content">
             <p class="contacts__description">У вас ещё остались вопросы или сомнения? Приезжайте
               к нам в офис и мы вам все расскажем.</p>
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <span>г. Санкт-Петербург,<br>
-                    ул. Большая Конюшенная, 19/8</span>
-                </li>
-                <li class="contacts__item">
-                  <a href="tel:+78002000000">8-800-200-00-00</a>
-                </li>
-              </ul>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <span>г. Санкт-Петербург,<br>
+                  ул. Большая Конюшенная, 19/8</span>
+              </li>
+              <li class="contacts__item">
+                <a href="tel:+78002000000">8-800-200-00-00</a>
+              </li>
+            </ul>
           </div>
           <div class="contacts__map" id="map">
-            <picture>
-              <source type="image/webp"
-                    srcset="./img/contents/map.webp 1x, ./img/contents/map@2x.webp 2x">
-              <img src="./img/contents/map.jpg" srcset="./img/contents/minion-1@2x.jpg 2x" width="560"
-              height="306" alt="Наше местоположение на карте.">
-            </picture>
+            <noscript>
+              <picture>
+                <source type="image/webp" srcset="./img/contents/map.webp 1x, ./img/contents/map@2x.webp 2x">
+                <img src="./img/contents/map.jpg" srcset="./img/contents/minion-1@2x.jpg 2x" width="560" height="306"
+                  alt="Наше местоположение на карте.">
+              </picture>
+            </noscript>
           </div>
         </div>
       </section>
@@ -447,16 +449,16 @@
           </a>
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Преимущества</a>
+              <a class="navigation__link" href="#advantages" data-scroll>Преимущества</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Направления</a>
+              <a class="navigation__link" href="#cruises" data-scroll>Направления</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Ближайшие круизы</a>
+              <a class="navigation__link" href="#cruises" data-scroll>Ближайшие круизы</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Контакты</a>
+              <a class="navigation__link" href="#contacts" data-scroll>Контакты</a>
             </li>
           </ul>
         </nav>
@@ -496,7 +498,8 @@
     </footer>
   </div>
 
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=en_US" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=b8874c11-5f38-4399-b12e-29f202febbc7&lang=en_US"
+    type="text/javascript"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
