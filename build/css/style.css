@@ -1170,7 +1170,7 @@ button,
 }
 
 .cards img {
-  width: 260px;
+  width: 100%;
   height: 386px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -1223,7 +1223,7 @@ button,
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  color: #f9fbfd;
+  color: #d8d8d9;
 }
 
 .cards a {
@@ -1237,6 +1237,18 @@ button,
   line-height: 21px;
   color: #011c40;
   text-align: center;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.cards a:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.cards a.focus-visible:focus {
+  opacity: 0.8;
 }
 
 .cards ul {
@@ -1246,6 +1258,310 @@ button,
 
 .cards li {
   list-style-type: none;
+}
+
+.reservation {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #e3ecf6;
+  background-image: url("../img/fone/form.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reservation .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 403px;
+  grid-template-columns: 1fr 403px;
+  padding-left: 163px;
+  padding-right: 163px;
+}
+
+.reservation__content {
+  padding-top: 178px;
+  margin-right: 20px;
+}
+
+.reservation__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #011c40;
+}
+
+.reservation__subtitle {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #011c40;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 403px;
+  padding: 50px;
+  background-color: #011c40;
+  -webkit-box-shadow: 0 4px 45px 0 rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px 0 rgba(1, 28, 64, 0.15);
+}
+
+.form-wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-wrapper p {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #f9fbfd;
+}
+
+.form-wrapper p > br {
+  display: none;
+}
+
+.form-wrapper input {
+  padding: 11px 16px;
+  border: none;
+  background-color: #f9fbfd;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #011c40;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.form-wrapper input:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.form-wrapper input.focus-visible:focus {
+  opacity: 0.8;
+}
+
+.form-wrapper input::-webkit-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+  text-transform: capitalize;
+}
+
+.form-wrapper input::-moz-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+  text-transform: capitalize;
+}
+
+.form-wrapper input:-ms-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+  text-transform: capitalize;
+}
+
+.form-wrapper input::-ms-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+  text-transform: capitalize;
+}
+
+.form-wrapper input::placeholder {
+  color: rgba(1, 28, 64, 0.7);
+  text-transform: capitalize;
+}
+
+.form-wrapper label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 5px;
+  -moz-column-gap: 5px;
+  column-gap: 5px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  color: #f9fbfd;
+}
+
+.form-wrapper input[type=checkbox] + span {
+  display: block;
+  position: relative;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #f9fbfd;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.form-wrapper input[type=checkbox]:checked + span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 6px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: url("../img/svg/form-checked.svg");
+  background-repeat: no-repeat;
+}
+
+.form-wrapper input[type=checkbox]:hover + span,
+.form-wrapper input[type=checkbox]:focus-visible + span {
+  opacity: 0.8;
+}
+
+.form-wrapper button {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #011c40;
+  background-color: #f9fbfd;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.form-wrapper button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.form-wrapper button:hover,
+.form-wrapper button:focus {
+  opacity: 0.8;
+}
+
+.contacts {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.contacts .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  gap: 100px;
+}
+
+.contacts__map {
+  width: 560px;
+  height: 306px;
+}
+
+.contacts__map img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.contacts__content {
+  margin-top: 80px;
+}
+
+.contacts__description {
+  margin: 0;
+  margin-bottom: 45px;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #011c40;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.contacts__item {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  list-style-type: none;
+}
+
+.contacts__item span,
+.contacts__item a {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #011c40;
+}
+
+.contacts__item span::before,
+.contacts__item a::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.contacts__item span::before {
+  width: 18px;
+  height: 22px;
+  background-image: url("../img/svg/map-pin.svg");
+  background-repeat: no-repeat;
+}
+
+.contacts__item a::before {
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/svg/phone.svg");
+  background-repeat: no-repeat;
+}
+
+.contacts__item span > br {
+  display: none;
 }
 
 .footer {
@@ -1390,6 +1706,10 @@ button,
   .advantages {
     background-image: url("../img/fone/advanteges@2x.jpg"), rgba(227, 236, 246, 0.9);
   }
+
+  .reservation {
+    background-image: url("../img/fone/form@2x.jpg");
+  }
 }
 
 @media (max-width: 1023px) {
@@ -1506,6 +1826,88 @@ button,
     line-height: 25px;
   }
 
+  .cruises {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .cruises__title {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .cruises__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards div {
+    padding: 35px;
+  }
+
+  .reservation {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("../img/fone/form-tablet.jpg");
+  }
+
+  .reservation .container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .reservation__content {
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0;
+    -ms-grid-column-align: center;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .reservation__title {
+    margin-bottom: 25px;
+    font-size: 34px;
+    line-height: 51px;
+  }
+
+  .form-wrapper {
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+
+  .contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .contacts .container {
+    gap: 30px;
+  }
+
+  .contacts__map {
+    min-width: 324px;
+    height: 335px;
+  }
+
+  .contacts__content {
+    margin-top: 72px;
+  }
+
+  .contacts__description {
+    margin-bottom: 40px;
+  }
+
+  .contacts__list {
+    gap: 30px;
+  }
+
+  .contacts__item span > br {
+    display: block;
+  }
+
   .footer__navigation {
     padding: 0;
   }
@@ -1534,6 +1936,10 @@ button,
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .top-wrapper {
     background-image: url("../img/fone/main-fon-tablet@2x.jpg");
+  }
+
+  .reservation {
+    background-image: url("../img/fone/form-tablet@2x.jpg");
   }
 }
 
@@ -1664,6 +2070,97 @@ button,
     width: 198px;
   }
 
+  .cruises {
+    padding: 65px 10px;
+  }
+
+  .cruises__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+
+  .cruises__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .cards div {
+    padding: 35px 25px;
+  }
+
+  .reservation {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-image: url("../../img/fone/form-mobile.jpg");
+  }
+
+  .reservation .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .reservation__content {
+    margin-bottom: 40px;
+  }
+
+  .reservation__title {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .reservation__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .reservation__subtitle br {
+    display: none;
+  }
+
+  .form-wrapper {
+    padding: 40px 30px;
+  }
+
+  .form-wrapper p {
+    text-align: center;
+    line-height: 25px;
+  }
+
+  .form-wrapper p > br {
+    display: block;
+  }
+
+  .form-wrapper label {
+    line-height: 12px;
+  }
+
+  .contacts {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .contacts .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .contacts__map {
+    min-width: 290px;
+    width: 100%;
+    height: 316px;
+  }
+
+  .contacts__content {
+    margin: 0;
+  }
+
+  .contacts__list {
+    gap: 40px;
+  }
+
   .footer {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -1685,6 +2182,10 @@ button,
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .top-wrapper {
     background-image: url("../img/fone/main-fon-mobile@2x.jpg");
+  }
+
+  .reservation {
+    background-image: url("../img/fone/form-mobile@2x.jpg");
   }
 }
 
@@ -1709,6 +2210,14 @@ button,
   .cards:hover:not(.focus-visible) div {
     -webkit-transform: perspective(600px) rotateY(0);
     transform: perspective(600px) rotateY(0);
+  }
+
+  .cards a:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .form-wrapper input:hover:not(.focus-visible) {
+    opacity: 0.8;
   }
 
   .social__link:hover:not(.focus-visible) {

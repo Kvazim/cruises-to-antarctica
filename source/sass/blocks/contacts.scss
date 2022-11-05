@@ -1,0 +1,141 @@
+.contacts {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include vp-1023 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+
+.contacts .container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 100px;
+
+  @include vp-1023 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.contacts__map {
+  width: 560px;
+  height: 306px;
+
+  @include vp-1023 {
+    min-width: 324px;
+    height: 335px;
+  }
+
+  @include vp-767 {
+    min-width: 290px;
+    width: 100%;
+    height: 316px;
+  }
+}
+
+.contacts__map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contacts__content {
+  margin-top: 80px;
+
+  @include vp-1023 {
+    margin-top: 72px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+  }
+}
+
+.contacts__description {
+  margin: 0;
+  margin-bottom: 45px;
+  padding: 0;
+  font-family: $ff-motserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: $color-tangaroa;
+
+  @include vp-1023 {
+    margin-bottom: 40px;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+
+  @include vp-1023 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    gap: 40px;
+  }
+}
+
+.contacts__item {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  list-style-type: none;
+}
+
+.contacts__item span,
+.contacts__item a {
+  font-family: $ff-motserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color-tangaroa;
+}
+
+.contacts__item span::before,
+.contacts__item a::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.contacts__item span::before {
+  width: 18px;
+  height: 22px;
+  background-image: url("../img/svg/map-pin.svg");
+  background-repeat: no-repeat;
+}
+
+.contacts__item a::before {
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/svg/phone.svg");
+  background-repeat: no-repeat;
+}
+
+.contacts__item span > br {
+  display: none;
+
+  @include vp-1023 {
+    display: block;
+  }
+}

@@ -383,14 +383,56 @@
           </ul>
         </div>
       </section>
-      <section class="intro">
+      <section class="reservation">
         <div class="container">
-          <h1>Тестовая страница.</h1>
-          <p>На данной странице показан пример модальных окон.</p>
-          <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
-          </p>
-          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+          <h2 class="visually-hidden">Забронировать билет</h2>
+          <div class="reservation__content">
+            <h3 class="reservation__title">Раннее бронирование</h3>
+            <p class="reservation__subtitle">Забронируйте тур за 3-6 месяцев<br> до даты выезда и сэкономьте до 50%</p>
+          </div>
+          <div class="reservation__form form-wrapper">
+            <form action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
+              <p>Оставьте заявку<br> и мы свяжемся с вами в ближайшее время</p>
+              <label class="visually-hidden" for="user">Введите Ваше имя</label>
+              <input type="text" name="user" placeholder="имя" id="user" minlength="1" pattern="[A-Za-zА-Яа-яЁё]+$" required>
+              <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
+              <input type="tel" name="tel" id="tel" placeholder="телефон" pattern="\+?[0-9\s\-\(\)]+" required>
+              <label class="visually-hidden" for="email">Введите Ваш email</label>
+              <input type="email" name="email" id="email" placeholder="email" required>
+              <label>
+                <input class="visually-hidden" type="checkbox" checked required>
+                <span></span>
+                Я согласен на обработку персональных данных
+              </label>
+              <button type="submit">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <div class="contacts__content">
+            <p class="contacts__description">У вас ещё остались вопросы или сомнения? Приезжайте
+              к нам в офис и мы вам все расскажем.</p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <span>г. Санкт-Петербург,<br>
+                    ул. Большая Конюшенная, 19/8</span>
+                </li>
+                <li class="contacts__item">
+                  <a href="tel:+78002000000">8-800-200-00-00</a>
+                </li>
+              </ul>
+          </div>
+          <div class="contacts__map" id="map">
+            <picture>
+              <source type="image/webp"
+                    srcset="./img/contents/map.webp 1x, ./img/contents/map@2x.webp 2x">
+              <img src="./img/contents/map.jpg" srcset="./img/contents/minion-1@2x.jpg 2x" width="560"
+              height="306" alt="Наше местоположение на карте.">
+            </picture>
+          </div>
         </div>
       </section>
     </main>
@@ -454,35 +496,7 @@
     </footer>
   </div>
 
-  <!-- Модалки -->
-  <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=en_US" type="text/javascript"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

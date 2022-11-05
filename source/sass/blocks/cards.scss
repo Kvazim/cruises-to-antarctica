@@ -19,7 +19,6 @@
   width: 100%;
   min-height: 100%;
   height: auto;
-  // overflow: hidden;
   backface-visibility: hidden;
   transition: transform 0.5s ease;
 }
@@ -46,7 +45,7 @@
 }
 
 .cards img {
-  width: 260px;
+  width: 100%;
   height: 386px;
   object-fit: cover;
 }
@@ -73,6 +72,14 @@
   overflow: auto;
   transform: perspective(600px) rotateY(180deg);
   transition: all $trans-600;
+
+  @include vp-1023 {
+    padding: 35px;
+  }
+
+  @include vp-767 {
+    padding: 35px 25px;
+  }
 }
 
 .cards h4 {
@@ -94,7 +101,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  color: $color-alice-blue;
+  color: $color-quartz;
 }
 
 .cards a {
@@ -108,6 +115,17 @@
   line-height: 21px;
   color: $color-tangaroa;
   text-align: center;
+  transition: opacity $trans-default;
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
 }
 
 .cards ul {
