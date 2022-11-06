@@ -403,6 +403,14 @@ template {
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
   font-weight: 600;
   src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
   font-display: swap;
@@ -1482,7 +1490,6 @@ button,
 }
 
 .contacts__map {
-  width: 100%;
   width: 560px;
   height: 306px;
 }
@@ -1495,6 +1502,7 @@ button,
 }
 
 .contacts__content {
+  width: 500px;
   margin-top: 80px;
 }
 
@@ -1889,11 +1897,13 @@ button,
   }
 
   .contacts__map {
+    width: 100%;
     min-width: 324px;
     height: 335px;
   }
 
   .contacts__content {
+    width: 100%;
     margin-top: 72px;
   }
 

@@ -28,11 +28,11 @@
 }
 
 .contacts__map {
-  width: 100%;
   width: 560px;
   height: 306px;
 
   @include vp-1023 {
+    width: 100%;
     min-width: 324px;
     height: 335px;
   }
@@ -50,9 +50,11 @@
 }
 
 .contacts__content {
+  width: 500px;
   margin-top: 80px;
 
   @include vp-1023 {
+    width: 100%;
     margin-top: 72px;
   }
 
