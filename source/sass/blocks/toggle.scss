@@ -4,6 +4,7 @@
   justify-self: flex-end;
   width: 24px;
   height: 14px;
+  margin-top: 4px;
   padding: 0;
   background-color: transparent;
   border: none;
@@ -52,7 +53,7 @@
 .is-open .toggle {
   position: absolute;
   top: 20px;
-  right: 15px;
+  right: 5px;
 }
 
 .nojs .toggle {

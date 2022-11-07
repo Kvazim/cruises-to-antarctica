@@ -3,12 +3,12 @@
   padding-bottom: 145px;
 
   @include vp-1023 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 90px;
+    padding-bottom: 93px;
   }
 
   @include vp-767 {
-    padding-top: 65px;
+    padding-top: 58px;
     padding-bottom: 85px;
   }
 }
@@ -16,16 +16,16 @@
 .travel .container {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
-  gap: 88px;
+  gap: 80px;
 
   @include vp-1023 {
     grid-template-columns: 1fr 329px;
-    gap: 35px;
+    gap: 25px;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 33px;
   }
 }
 
@@ -33,9 +33,12 @@
   display: block;
   width: 560px;
   height: 301px;
+  margin-left: auto;
   object-fit: contain;
 
   @include vp-1023 {
+    margin: 0;
+    margin-top: 10px;
     width: 324px;
     height: 175px;
   }

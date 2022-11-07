@@ -36,12 +36,22 @@
   display: block;
   position: absolute;
   left: 30px;
-  bottom: 30px;
+  bottom: 22px;
   font-family: $ff-motserrat;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
   color: $color-alice-blue;
+
+  @include vp-1023 {
+    left: 35px;
+    bottom: 27px;
+  }
+
+  @include vp-767 {
+    left: 25px;
+    bottom: 17px;
+  }
 }
 
 .cards img {
@@ -51,6 +61,7 @@
 }
 
 .cards h3 {
+  display: table-header-group;
   margin: 0;
   margin-bottom: 11px;
   padding: 0;
@@ -105,9 +116,9 @@
 }
 
 .cards a {
-  display: block;
   margin-top: 22px;
   padding: 10px;
+  height: 40px;
   background-color: $color-alice-blue;
   font-family: $ff-motserrat;
   font-size: 14px;

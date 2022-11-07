@@ -15,6 +15,8 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
+  removeNoJs();
+  createMap();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -23,9 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
   });
 });
-
-removeNoJs();
-createMap();
 
 // ---------------------------------
 

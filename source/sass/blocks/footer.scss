@@ -1,17 +1,25 @@
 .footer {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   background-color: $color-tangaroa;
+
+  @include vp-1023 {
+    padding-top: 42px;
+  }
 
   @include vp-767 {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
   }
 }
 
 .footer .container {
   display: grid;
-  grid-template-columns: 1fr 120px;
+  grid-template-columns: 1fr 110px;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr 87px;
+  }
 
   @include vp-767 {
     grid-template-columns: 1fr;
@@ -22,6 +30,7 @@
   padding: 0;
   justify-items: start;
   align-items: baseline;
+  gap: 10px;
 
   @include vp-1023 {
     padding: 0;
@@ -29,17 +38,24 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    margin-bottom: 30px;
+    gap: 0;
+    margin-bottom: 12px;
     padding: 0;
   }
 }
 
 .footer__navigation .navigation__logo {
   margin-bottom: 30px;
+
+  @include vp-767 {
+    margin-bottom: 22px;
+  }
 }
 
 .footer__navigation .navigation__list {
-  align-self: center;
+  @include vp-767 {
+    gap: 7px;
+  }
 }
 
 .footer__navigation .navigation__link {
@@ -48,5 +64,9 @@
   @include vp-1023 {
     font-size: 12px;
     line-height: 15px;
+  }
+
+  @include vp-767 {
+    padding: 5px 0;
   }
 }
