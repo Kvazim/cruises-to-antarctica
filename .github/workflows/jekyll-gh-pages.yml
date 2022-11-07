@@ -20,19 +20,16 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '16.x'
-          
+
 
       - name: Installing Dependencies
         run: npm install
-        
+
       - name: test
         run: npm run test
 
       - name: Building
         run: npm run build
-        
-      - name: optimizeImages
-        run: npm run optimizeImages
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.2
