@@ -30,7 +30,7 @@ const createMap = () => {
       hintContent: 'Круизы в Антарктику',
     },
     {
-      iconImageHref: '../../img/svg/map-pin.svg',
+      iconImageHref: './img/svg/map-pin.svg',
       iconImageSize: PIN_SIZE,
       iconImageOffset: PIN_OFSET,
       iconLayout: 'default#image',
