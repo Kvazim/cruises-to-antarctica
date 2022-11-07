@@ -4,8 +4,8 @@
 const map = document.querySelector('.contacts__map');
 
 const CENTER_MAP = {
-  lat: 59.938971,
-  lng: 30.321616,
+  lat: 59.938491,
+  lng: 30.321505,
 };
 const СOORDINATES_PIN = {
   lat: 59.937455,
