@@ -31,9 +31,13 @@ jobs:
       - name: Building
         run: npm run build
 
+      - name: imagemin
+        run: npm run imagemin
+
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          folder: ././build
+          folder: ./build
           branch: gh-pages
