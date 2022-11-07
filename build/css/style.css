@@ -1136,6 +1136,16 @@ button,
   transform: perspective(600px) rotateY(0);
 }
 
+.cards.focus-visible:active figure {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.cards.focus-visible:active div {
+  -webkit-transform: perspective(600px) rotateY(0);
+  transform: perspective(600px) rotateY(0);
+}
+
 .cards figure,
 .cards div {
   width: 100%;
@@ -1182,7 +1192,6 @@ button,
 }
 
 .cards h3 {
-  display: table-header-group;
   margin: 0;
   margin-bottom: 11px;
   padding: 0;
@@ -1233,6 +1242,7 @@ button,
 }
 
 .cards a {
+  display: block;
   margin-top: 22px;
   padding: 10px;
   height: 40px;
@@ -1867,6 +1877,7 @@ button,
 
   .cards div {
     padding: 35px;
+    padding-top: 30px;
   }
 
   .reservation {
@@ -2177,6 +2188,7 @@ button,
 
   .cards div {
     padding: 35px 25px;
+    padding-top: 30px;
   }
 
   .reservation {
