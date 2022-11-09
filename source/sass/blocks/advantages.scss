@@ -1,7 +1,7 @@
 .advantages {
   padding-top: 110px;
   padding-bottom: 120px;
-  background: url("../img/fone/advanteges.jpg"), $color-solitude-opacity;
+  background: url("../img/contents/fone/advanteges.webp"), $color-solitude-opacity;
   background-blend-mode: color;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,7 +9,7 @@
 
   @media (min-width: 1024px) {
     @include retina {
-      background-image: url("../img/fone/advanteges@2x.jpg"), $color-solitude-opacity;
+      background-image: url("../img/contents/fone/advanteges@2x.webp"), $color-solitude-opacity;
     }
   }
 

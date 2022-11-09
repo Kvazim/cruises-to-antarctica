@@ -2,33 +2,33 @@
   padding-top: 50px;
   padding-bottom: 49px;
   background-color: $color-solitude;
-  background-image: url("../img/fone/form.jpg");
+  background-image: url("../img/contents/fone/form.webp");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-width: 1024px) {
     @include retina {
-      background-image: url("../img/fone/form@2x.jpg");
+      background-image: url("../img/contents/fone/form@2x.webp");
     }
   }
 
   @include vp-1023 {
     padding-top: 88px;
     padding-bottom: 100px;
-    background-image: url("../img/fone/form-tablet.jpg");
+    background-image: url("../img/contents/fone/form-tablet.webp");
 
     @include retina {
-      background-image: url("../img/fone/form-tablet@2x.jpg");
+      background-image: url("../img/contents/fone/form-tablet@2x.webp");
     }
   }
 
   @include vp-767 {
     padding-top: 59px;
     padding-bottom: 65px;
-    background-image: url("../img/fone/form-mobile.jpg");
+    background-image: url("../img/contents/fone/form-mobile.webp");
 
     @include retina {
-      background-image: url("../img/fone/form-mobile@2x.jpg");
+      background-image: url("../img/contents/fone/form-mobile@2x.webp");
     }
   }
 }
