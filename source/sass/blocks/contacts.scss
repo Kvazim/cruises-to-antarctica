@@ -134,7 +134,7 @@
   background-repeat: no-repeat;
 }
 
-.contacts__item span > br {
+.contacts__item br {
   display: none;
 
   @include vp-1023 {

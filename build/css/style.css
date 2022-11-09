@@ -396,7 +396,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
   font-display: swap;
 }
 
@@ -404,7 +404,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  src: url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
   font-display: swap;
 }
 
@@ -412,7 +412,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  src: url("../fonts/montserrat-semibold.woff2") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff");
   font-display: swap;
 }
 
@@ -420,7 +420,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
   font-display: swap;
 }
 
@@ -1126,26 +1126,6 @@ button,
   cursor: pointer;
 }
 
-.cards.focus-visible:focus figure {
-  -webkit-transform: perspective(600px) rotateY(-180deg);
-  transform: perspective(600px) rotateY(-180deg);
-}
-
-.cards.focus-visible:focus div {
-  -webkit-transform: perspective(600px) rotateY(0);
-  transform: perspective(600px) rotateY(0);
-}
-
-.cards.focus-visible:active figure {
-  -webkit-transform: perspective(600px) rotateY(-180deg);
-  transform: perspective(600px) rotateY(-180deg);
-}
-
-.cards.focus-visible:active div {
-  -webkit-transform: perspective(600px) rotateY(0);
-  transform: perspective(600px) rotateY(0);
-}
-
 .cards figure,
 .cards div {
   width: 100%;
@@ -1170,6 +1150,16 @@ button,
   -webkit-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
   transition: all 0.6s ease;
+}
+
+.cards figure.focus-visible:focus {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.cards figure.focus-visible:active {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+  transform: perspective(600px) rotateY(-180deg);
 }
 
 .cards figcaption {
@@ -1217,6 +1207,16 @@ button,
   -webkit-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
   transition: all 0.6s ease;
+}
+
+.cards div.focus-visible:focus {
+  -webkit-transform: perspective(600px) rotateY(0);
+  transform: perspective(600px) rotateY(0);
+}
+
+.cards div.focus-visible:active {
+  -webkit-transform: perspective(600px) rotateY(0);
+  transform: perspective(600px) rotateY(0);
 }
 
 .cards h4 {
@@ -1356,7 +1356,7 @@ button,
   color: #f9fbfd;
 }
 
-.form-wrapper p > br {
+.form-wrapper br {
   display: none;
 }
 
@@ -1442,8 +1442,8 @@ button,
   content: "";
   display: block;
   position: absolute;
-  width: 10px;
-  height: 6px;
+  width: 12px;
+  height: 8px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1469,6 +1469,7 @@ button,
   font-weight: 600;
   line-height: 21px;
   color: #011c40;
+  border: none;
   background-color: #f9fbfd;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
@@ -1582,7 +1583,7 @@ button,
   background-repeat: no-repeat;
 }
 
-.contacts__item span > br {
+.contacts__item br {
   display: none;
 }
 
@@ -1952,7 +1953,7 @@ button,
     top: 33%;
   }
 
-  .contacts__item span > br {
+  .contacts__item br {
     display: block;
   }
 
@@ -2232,7 +2233,7 @@ button,
     line-height: 25px;
   }
 
-  .form-wrapper p > br {
+  .form-wrapper br {
     display: block;
   }
 
@@ -2328,12 +2329,12 @@ button,
     opacity: 0.6;
   }
 
-  .cards:hover:not(.focus-visible) figure {
+  .cards figure:hover:not(.focus-visible) {
     -webkit-transform: perspective(600px) rotateY(-180deg);
     transform: perspective(600px) rotateY(-180deg);
   }
 
-  .cards:hover:not(.focus-visible) div {
+  .cards div:hover:not(.focus-visible) {
     -webkit-transform: perspective(600px) rotateY(0);
     transform: perspective(600px) rotateY(0);
   }
