@@ -2,6 +2,26 @@
   display: block;
   position: relative;
   cursor: pointer;
+
+  @include hover-focus {
+    figure {
+      transform: perspective(600px) rotateY(-180deg);
+    }
+
+    div {
+      transform: perspective(600px) rotateY(0);
+    }
+  }
+
+  @include active {
+    figure {
+      transform: perspective(600px) rotateY(-180deg);
+    }
+
+    div {
+      transform: perspective(600px) rotateY(0);
+    }
+  }
 }
 
 .cards figure,
@@ -20,14 +40,6 @@
   padding: 0;
   transform: perspective(600px) rotateY(0);
   transition: all $trans-600;
-
-  @include hover-focus {
-    transform: perspective(600px) rotateY(-180deg);
-  }
-
-  @include active {
-    transform: perspective(600px) rotateY(-180deg);
-  }
 }
 
 .cards figcaption {
@@ -89,14 +101,6 @@
   @include vp-767 {
     padding: 35px 25px;
     padding-top: 30px;
-  }
-
-  @include hover-focus {
-    transform: perspective(600px) rotateY(0);
-  }
-
-  @include active {
-    transform: perspective(600px) rotateY(0);
   }
 }
 
