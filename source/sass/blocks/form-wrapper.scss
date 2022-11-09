@@ -92,7 +92,7 @@
   }
 }
 
-.form-wrapper input[type="checkbox"]+span {
+.form-wrapper input[type="checkbox"] + span {
   display: block;
   position: relative;
   flex-shrink: 0;
@@ -107,7 +107,7 @@
   }
 }
 
-.form-wrapper input[type="checkbox"]:checked+span::before {
+.form-wrapper input[type="checkbox"]:checked + span::before {
   content: "";
   display: block;
   position: absolute;
@@ -120,8 +120,8 @@
   background-repeat: no-repeat;
 }
 
-.form-wrapper input[type="checkbox"]:hover+span,
-.form-wrapper input[type="checkbox"]:focus-visible+span {
+.form-wrapper input[type="checkbox"]:hover + span,
+.form-wrapper input[type="checkbox"]:focus-visible + span {
   opacity: 0.8;
 }
 
