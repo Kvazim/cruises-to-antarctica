@@ -1,5 +1,5 @@
-/*  global ymaps  */
-/*  eslint no-undef: "error"  */
+/* global ymaps */
+/* eslint no-undef: "error" */
 
 const map = document.querySelector('.contacts__map');
 

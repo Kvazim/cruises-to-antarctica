@@ -789,7 +789,9 @@ button,
 
 .top-wrapper {
   background-color: #011c40;
-  background-image: url("../img/contents/fone/main-fon.webp");
+  background-image: url("../img/contents/fone/main-fon.jpg");
+  background-image: -webkit-image-set(url("../img/contents/fone/main-fon.webp") 1x, url("../img/contents/fone/main-fon.jpg") 1x);
+  background-image: image-set(url("../img/contents/fone/main-fon.webp") 1x, url("../img/contents/fone/main-fon.jpg") 1x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -1719,7 +1721,9 @@ button,
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
   .top-wrapper {
-    background-image: url("../img/contents/fone/main-fon@2x.webp");
+    background-image: url("../img/contents/fone/main-fon@2x.jpg");
+    background-image: -webkit-image-set(url("../img/contents/fone/main-fon@2x.webp") 2x, url("../img/contents/fone/main-fon@2x.jpg") 2x);
+    background-image: image-set(url("../img/contents/fone/main-fon@2x.webp") 2x, url("../img/contents/fone/main-fon@2x.jpg") 2x);
   }
 
   .advantages {
@@ -1739,7 +1743,9 @@ button,
   .top-wrapper {
     -webkit-filter: none;
     filter: none;
-    background-image: url("../img/contents/fone/main-fon-tablet.webp");
+    background-image: url("../img/contents/fone/main-fon-tablet.jpg");
+    background-image: -webkit-image-set(url("../img/contents/fone/main-fon-tablet.jpg") 1x, url("../img/contents/fone/main-fon-tablet.webp") 1x);
+    background-image: image-set(url("../img/contents/fone/main-fon-tablet.jpg") 1x, url("../img/contents/fone/main-fon-tablet.webp") 1x);
   }
 
   .navigation {
@@ -1997,7 +2003,9 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .top-wrapper {
-    background-image: url("../img/contents/fone/main-fon-tablet@2x.webp");
+    background-image: url("../img/contents/fone/main-fon-tablet@2x.jpg");
+    background-image: -webkit-image-set(url("../img/contents/fone/main-fon-tablet@2x.jpg") 2x, url("../img/contents/fone/main-fon-tablet@2x.webp") 2x);
+    background-image: image-set(url("../img/contents/fone/main-fon-tablet@2x.jpg") 2x, url("../img/contents/fone/main-fon-tablet@2x.webp") 2x);
   }
 
   .reservation {
@@ -2024,7 +2032,9 @@ button,
   }
 
   .top-wrapper {
-    background-image: url("../img/contents/fone/main-fon-mobile.webp");
+    background-image: url("../img/contents/fone/main-fon-mobile.jpg");
+    background-image: -webkit-image-set(url("../img/contents/fone/main-fon-mobile@2x.jpg") 2x, url("../img/contents/fone/main-fon-mobile.webp") 1x);
+    background-image: image-set(url("../img/contents/fone/main-fon-mobile@2x.jpg") 2x, url("../img/contents/fone/main-fon-mobile.webp") 1x);
   }
 
   .navigation {
@@ -2308,7 +2318,9 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .top-wrapper {
-    background-image: url("../img/contents/fone/main-fon-mobile@2x.webp");
+    background-image: url("../img/contents/fone/main-fon-mobile@2x.jpg");
+    background-image: -webkit-image-set(url("../img/contents/fone/main-fon-mobile@2x.jpg") 2x, url("../img/contents/fone/main-fon-mobile@2x.webp") 2x);
+    background-image: image-set(url("../img/contents/fone/main-fon-mobile@2x.jpg") 2x, url("../img/contents/fone/main-fon-mobile@2x.webp") 2x);
   }
 
   .reservation {
