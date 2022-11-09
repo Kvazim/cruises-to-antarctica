@@ -11,7 +11,7 @@ const СOORDINATES_PIN = {
   lat: 59.937455,
   lng: 30.322974,
 };
-const ZOOM = 16;
+const ZOOM = 15.5;
 const PIN_SIZE = [18, 22];
 const PIN_OFSET = [-18, -22];
 
