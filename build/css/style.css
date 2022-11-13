@@ -1128,12 +1128,12 @@ button,
   cursor: pointer;
 }
 
-.cards.focus-visible:focus figure {
+.cards:focus-within figure {
   -webkit-transform: perspective(600px) rotateY(-180deg);
   transform: perspective(600px) rotateY(-180deg);
 }
 
-.cards.focus-visible:focus div {
+.cards:focus-within div {
   -webkit-transform: perspective(600px) rotateY(0);
   transform: perspective(600px) rotateY(0);
 }

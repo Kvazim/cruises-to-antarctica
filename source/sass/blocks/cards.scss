@@ -3,7 +3,17 @@
   position: relative;
   cursor: pointer;
 
-  @include hover-focus {
+  @include hover {
+    figure {
+      transform: perspective(600px) rotateY(-180deg);
+    }
+
+    div {
+      transform: perspective(600px) rotateY(0);
+    }
+  }
+
+  &:focus-within {
     figure {
       transform: perspective(600px) rotateY(-180deg);
     }
