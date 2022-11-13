@@ -1,7 +1,7 @@
 /* global ymaps */
 /* eslint no-undef: "error" */
 
-const map = document.querySelector('.contacts__map');
+const map = document.querySelector('[data-map]');
 
 const CENTER_MAP = {
   lat: 59.938491,
@@ -14,6 +14,12 @@ const СOORDINATES_PIN = {
 const ZOOM = 15.5;
 const PIN_SIZE = [18, 22];
 const PIN_OFSET = [-18, -22];
+
+const initMap = () => {
+  if (map) {
+    createMap();
+  }
+};
 
 const createMap = () => {
   ymaps.ready(init);
@@ -40,4 +46,4 @@ const createMap = () => {
   }
 };
 
-export {createMap};
+export {initMap};

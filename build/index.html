@@ -23,15 +23,16 @@
   <link rel="preload" href="./fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="dns-prefetch" href="https://api-maps.yandex.ru">
   <link rel="preconnect" href="https://api-maps.yandex.ru">
-  <link rel="preload" as="script" href="https://api-maps.yandex.ru/2.1/?apikey=b8874c11-5f38-4399-b12e-29f202febbc7&lang=ru_RU">
+  <link rel="preload" as="script"
+    href="https://api-maps.yandex.ru/2.1/?apikey=b8874c11-5f38-4399-b12e-29f202febbc7&lang=ru_RU">
 </head>
 
 <body>
   <div class="wrapper">
     <div class="top-wrapper">
-      <header class="header nojs">
+      <header class="header nojs" data-header>
         <div class="container">
-          <nav class="header__navigation navigation is-open">
+          <nav class="header__navigation navigation is-open" data-navigation>
             <a class="navigation__logo" aria-current="page">
               <svg class="navigation__icon" width="70" height="38" viewBox="0 0 70 38" role="img" aria-hidden="true">
                 <use xlink:href="./img/sprite_auto.svg#logo"></use>
@@ -54,7 +55,8 @@
                 </li>
               </ul>
             </div>
-            <button class="navigation__toggle toggle" type="button" aria-label="Открыть/скрыть меню.">
+            <button class="navigation__toggle toggle" type="button" aria-label="Открыть/скрыть меню."
+              data-navigation-toggle>
               <svg class="toggle__icon toggle__icon--basic" width="24" height="14" viewBox="0 0 24 14" role="img"
                 aria-hidden="true">
                 <use xlink:href="./img/sprite_auto.svg#burger"></use>
@@ -88,7 +90,7 @@
           <picture>
             <source type="image/webp" srcset="./img/contents/penguins.webp 1x, ./img/contents/penguins@2x.webp 2x">
             <img class="travel__image" src="./img/contents/penguins.jpg" srcset="./img/contents/penguins@2x.jpg 2x"
-              width="560" height="301" alt="Пингвины на фоне снега." loading="lazy">
+              width="560" height="301" alt="Пингвины на фоне снега.">
           </picture>
         </div>
       </section>
@@ -433,12 +435,12 @@
               </li>
             </ul>
           </div>
-          <div class="contacts__map">
+          <div class="contacts__map" data-map>
             <noscript>
               <picture>
                 <source type="image/webp" srcset="./img/contents/map.webp 1x, ./img/contents/map@2x.webp 2x">
                 <img src="./img/contents/map.jpg" srcset="./img/contents/minion-1@2x.jpg 2x" width="560" height="306"
-                  alt="Наше местоположение на карте.">
+                  alt="Наше местоположение на карте." loading="lazy">
               </picture>
             </noscript>
           </div>

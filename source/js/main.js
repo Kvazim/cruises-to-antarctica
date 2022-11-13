@@ -1,9 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import './modules/toggle-button/togle-button';
 import {removeNoJs} from './modules/nojs/nojs';
 import './modules/smooth-scroll/smooth-scroll';
-import {createMap} from './modules/map/map';
+import {initMap} from './modules/map/map';
+import {initToggle} from './modules/toggle-button/togle-button';
 
 // ---------------------------------
 
@@ -15,14 +15,17 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
+
   removeNoJs();
+  initToggle();
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    createMap();
     initModals();
+    initMap();
   });
 });
 

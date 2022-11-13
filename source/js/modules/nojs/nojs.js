@@ -1,6 +1,6 @@
 import {headerNavigation} from '../toggle-button/togle-button';
 
-const header = document.querySelector('.header');
+const header = document.querySelector('[data-header]');
 
 const removeNoJs = () => {
   headerNavigation.classList.remove('is-open');
