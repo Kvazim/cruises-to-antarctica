@@ -803,6 +803,10 @@ button,
   position: relative;
 }
 
+.header__navigation {
+  justify-items: end;
+}
+
 .navigation {
   display: -ms-grid;
   display: grid;
@@ -836,9 +840,6 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
 
 .navigation__item {
@@ -1280,7 +1281,7 @@ button,
 
 .reservation {
   padding-top: 50px;
-  padding-bottom: 49px;
+  padding-bottom: 50px;
   background-color: #e3ecf6;
   background-image: url("../img/contents/fone/form.webp");
   background-repeat: no-repeat;
@@ -1465,7 +1466,7 @@ button,
   margin-top: 10px;
   padding: 0;
   padding-top: 10px;
-  padding-bottom: 9px;
+  padding-bottom: 12px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -1559,7 +1560,6 @@ button,
   color: #011c40;
 }
 
-.contacts__item span::before,
 .contacts__item a::before {
   display: block;
   position: absolute;
@@ -1571,14 +1571,14 @@ button,
   transform: translateY(-50%);
 }
 
-.contacts__item span::before {
+.contacts__item--addres a::before {
   width: 18px;
   height: 22px;
   background-image: url("../img/svg/map-pin.svg");
   background-repeat: no-repeat;
 }
 
-.contacts__item a::before {
+.contacts__item--phone a::before {
   width: 18px;
   height: 18px;
   background-image: url("../img/svg/phone.svg");
@@ -1591,7 +1591,7 @@ button,
 
 .footer {
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 43px;
   background-color: #011c40;
 }
 
@@ -1609,10 +1609,6 @@ button,
   -ms-flex-align: baseline;
   align-items: baseline;
   gap: 10px;
-}
-
-.footer__navigation .navigation__logo {
-  margin-bottom: 30px;
 }
 
 .footer__navigation .navigation__link {
@@ -1755,7 +1751,7 @@ button,
   }
 
   .navigation__logo {
-    margin-right: 25px;
+    margin-right: 14px;
     margin-top: 8px;
   }
 
@@ -1923,7 +1919,7 @@ button,
   .form-wrapper {
     -ms-grid-column-align: center;
     justify-self: center;
-    padding-bottom: 49px;
+    padding-bottom: 50px;
   }
 
   .contacts {
@@ -1954,7 +1950,6 @@ button,
     gap: 23px;
   }
 
-  .contacts__item span::before,
   .contacts__item a::before {
     top: 33%;
   }
@@ -1965,6 +1960,7 @@ button,
 
   .footer {
     padding-top: 42px;
+    padding-bottom: 37px;
   }
 
   .footer .container {
@@ -2046,6 +2042,7 @@ button,
 
   .navigation__logo {
     margin: 0;
+    margin-right: 10px;
   }
 
   .navigation__icon {
@@ -2261,7 +2258,7 @@ button,
   }
 
   .form-wrapper button {
-    margin-top: 5px;
+    margin-top: 6px;
   }
 
   .contacts {

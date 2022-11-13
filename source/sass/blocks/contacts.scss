@@ -106,7 +106,6 @@
   color: $color-tangaroa;
 }
 
-.contacts__item span::before,
 .contacts__item a::before {
   display: block;
   position: absolute;
@@ -120,14 +119,14 @@
   }
 }
 
-.contacts__item span::before {
+.contacts__item--addres a::before {
   width: 18px;
   height: 22px;
   background-image: url("../img/svg/map-pin.svg");
   background-repeat: no-repeat;
 }
 
-.contacts__item a::before {
+.contacts__item--phone a::before {
   width: 18px;
   height: 18px;
   background-image: url("../img/svg/phone.svg");

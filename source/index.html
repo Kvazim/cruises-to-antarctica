@@ -2,14 +2,14 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Круизы, круизы в антарктику, путешествия на край Земли, мир айсбергов и пингвинов, лайнер, туры, экскурсии, раннее бронирование.">
   <title>Круизы в Антарктику</title>
-  <meta name="theme-color" content="#011C40" />
-  <meta name="msapplication-config" content="./img/favicon/browserconfig.xml" />
+  <meta name="theme-color" content="#011C40">
+  <meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
   <link rel="icon" href="./img/favicon/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
@@ -22,9 +22,8 @@
   <link rel="preload" href="./fonts/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="dns-prefetch" href="https://api-maps.yandex.ru">
-  <link rel="preconnect" href="https://api-maps.yandex.ru" />
-  <link rel="preload" fetchpriority="high"
-    href="https://api-maps.yandex.ru/2.1/?apikey=b8874c11-5f38-4399-b12e-29f202febbc7&lang=ru_RU">
+  <link rel="preconnect" href="https://api-maps.yandex.ru">
+  <link rel="preload" as="script" href="https://api-maps.yandex.ru/2.1/?apikey=b8874c11-5f38-4399-b12e-29f202febbc7&lang=ru_RU">
 </head>
 
 <body>
@@ -425,11 +424,11 @@
             <p class="contacts__description">У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис
               и мы вам все расскажем.</p>
             <ul class="contacts__list">
-              <li class="contacts__item">
-                <span>г. Санкт-Петербург,<br>
-                  ул. Большая Конюшенная, 19/8</span>
+              <li class="contacts__item contacts__item--addres">
+                <a href="https://yandex.ru/maps/-/CCUbaDuvtB" target="_blank">г. Санкт-Петербург,<br>
+                  ул. Большая Конюшенная, 19/8</a>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--phone">
                 <a href="tel:+78002000000">8-800-200-00-00</a>
               </li>
             </ul>
@@ -508,7 +507,7 @@
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
-  <script defer async
+  <script async defer
     src="https://api-maps.yandex.ru/2.1/?apikey=b8874c11-5f38-4399-b12e-29f202febbc7&lang=ru_RU"></script>
 </body>
 
