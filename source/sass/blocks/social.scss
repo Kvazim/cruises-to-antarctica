@@ -8,10 +8,12 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  gap: 28px;
+  column-gap: 28px;
+  row-gap: 28px;
 
   @include vp-1023 {
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
   }
 }
 

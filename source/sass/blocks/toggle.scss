@@ -25,6 +25,7 @@
 
 .toggle__icon {
   display: block;
+  margin: 0 auto;
 
   &--basic {
     width: 24px;
@@ -53,7 +54,7 @@
 .is-open .toggle {
   position: absolute;
   top: 20px;
-  right: 5px;
+  right: 10px;
 }
 
 .nojs .toggle {
