@@ -790,8 +790,8 @@ button,
 .top-wrapper {
   background-color: #011c40;
   background-image: url("../img/contents/fone/main-fon.jpg");
-  background-image: -webkit-image-set(url("../img/contents/fone/main-fon.webp") 1x, url("../img/contents/fone/main-fon.jpg") 1x);
-  background-image: image-set(url("../img/contents/fone/main-fon.webp") 1x, url("../img/contents/fone/main-fon.jpg") 1x);
+  background-image: -webkit-image-set(url("../img/contents/fone/main-fon.jpg") 1x, url("../img/contents/fone/main-fon.webp") 1x);
+  background-image: image-set(url("../img/contents/fone/main-fon.jpg") 1x, url("../img/contents/fone/main-fon.webp") 1x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -1284,8 +1284,8 @@ button,
   padding-bottom: 50px;
   background-color: #e3ecf6;
   background-image: url("../img/contents/fone/form.jpg");
-  background-image: -webkit-image-set(url("../img/contents/fone/form.webp") 1x, url("../img/contents/fone/form.jpg") 1x);
-  background-image: image-set(url("../img/contents/fone/form.webp") 1x, url("../img/contents/fone/form.jpg") 1x);
+  background-image: -webkit-image-set(url("../img/contents/fone/form.jpg") 1x, url("../img/contents/fone/form.webp") 1x);
+  background-image: image-set(url("../img/contents/fone/form.jpg") 1x, url("../img/contents/fone/form.webp") 1x);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1720,8 +1720,8 @@ button,
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
   .top-wrapper {
     background-image: url("../img/contents/fone/main-fon@2x.jpg");
-    background-image: -webkit-image-set(url("../img/contents/fone/main-fon@2x.webp") 2x, url("../img/contents/fone/main-fon@2x.jpg") 2x);
-    background-image: image-set(url("../img/contents/fone/main-fon@2x.webp") 2x, url("../img/contents/fone/main-fon@2x.jpg") 2x);
+    background-image: -webkit-image-set(url("../img/contents/fone/main-fon@2x.jpg") 2x, url("../img/contents/fone/main-fon@2x.webp") 2x);
+    background-image: image-set(url("../img/contents/fone/main-fon@2x.jpg") 2x, url("../img/contents/fone/main-fon@2x.webp") 2x);
   }
 
   .advantages {
@@ -1730,8 +1730,8 @@ button,
 
   .reservation {
     background-image: url("../img/contents/fone/form@2x.jpg");
-    background-image: -webkit-image-set(url("../img/contents/fone/form@2x.webp") 2x, url("../img/contents/fone/form@2x.jpg") 2x);
-    background-image: image-set(url("../img/contents/fone/form@2x.webp") 2x, url("../img/contents/fone/form@2x.jpg") 2x);
+    background-image: -webkit-image-set(url("../img/contents/fone/form@2x.jpg") 2x, url("../img/contents/fone/form@2x.webp") 2x);
+    background-image: image-set(url("../img/contents/fone/form@2x.jpg") 2x, url("../img/contents/fone/form@2x.webp") 2x);
   }
 }
 
@@ -1744,8 +1744,8 @@ button,
     -webkit-filter: none;
     filter: none;
     background-image: url("../img/contents/fone/main-fon-tablet.jpg");
-    background-image: -webkit-image-set(url("../img/contents/fone/main-fon-tablet.webp") 1x, url("../img/contents/fone/main-fon-tablet.jpg") 1x);
-    background-image: image-set(url("../img/contents/fone/main-fon-tablet.webp") 1x, url("../img/contents/fone/main-fon-tablet.jpg") 1x);
+    background-image: -webkit-image-set(url("../img/contents/fone/main-fon-tablet.jpg") 1x, url("../img/contents/fone/main-fon-tablet.webp") 1x);
+    background-image: image-set(url("../img/contents/fone/main-fon-tablet.jpg") 1x, url("../img/contents/fone/main-fon-tablet.webp") 1x);
   }
 
   .navigation {
@@ -1891,8 +1891,8 @@ button,
     padding-top: 88px;
     padding-bottom: 100px;
     background-image: url("../img/contents/fone/form-tablet.jpg");
-    background-image: -webkit-image-set(url("../img/contents/fone/form-tablet.webp") 1x, url("../img/contents/fone/form-tablet.jpg") 1x);
-    background-image: image-set(url("../img/contents/fone/form-tablet.webp") 1x, url("../img/contents/fone/form-tablet.jpg") 1x);
+    background-image: -webkit-image-set(url("../img/contents/fone/form-tablet.jpg") 1x, url("../img/contents/fone/form-tablet.webp") 1x);
+    background-image: image-set(url("../img/contents/fone/form-tablet.jpg") 1x, url("../img/contents/fone/form-tablet.webp") 1x);
   }
 
   .reservation .container {
@@ -2006,14 +2006,14 @@ button,
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .top-wrapper {
     background-image: url("../img/contents/fone/main-fon-tablet@2x.jpg");
-    background-image: -webkit-image-set(url("../img/contents/fone/main-fon-tablet@2x.webp") 2x, url("../img/contents/fone/main-fon-tablet@2x.jpg") 2x);
-    background-image: image-set(url("../img/contents/fone/main-fon-tablet@2x.webp") 2x, url("../img/contents/fone/main-fon-tablet@2x.jpg") 2x);
+    background-image: -webkit-image-set(url("../img/contents/fone/main-fon-tablet@2x.jpg") 2x, url("../img/contents/fone/main-fon-tablet@2x.webp") 2x);
+    background-image: image-set(url("../img/contents/fone/main-fon-tablet@2x.jpg") 2x, url("../img/contents/fone/main-fon-tablet@2x.webp") 2x);
   }
 
   .reservation {
     background-image: url("../img/contents/fone/form-tablet@2x.jpg");
-    background-image: -webkit-image-set(url("../img/contents/fone/form-tablet@2x.webp") 2x, url("../img/contents/fone/form-tablet@2x.jpg") 2x);
-    background-image: image-set(url("../img/contents/fone/form-tablet@2x.webp") 2x, url("../img/contents/fone/form-tablet@2x.jpg") 2x);
+    background-image: -webkit-image-set(url("../img/contents/fone/form-tablet@2x.jpg") 2x, url("../img/contents/fone/form-tablet@2x.webp") 2x);
+    background-image: image-set(url("../img/contents/fone/form-tablet@2x.jpg") 2x, url("../img/contents/fone/form-tablet@2x.webp") 2x);
   }
 }
 
@@ -2037,8 +2037,8 @@ button,
 
   .top-wrapper {
     background-image: url("../img/contents/fone/main-fon-mobile.jpg");
-    background-image: -webkit-image-set(url("../img/contents/fone/main-fon-mobile@2x.webp") 2x, url("../img/contents/fone/main-fon-mobile.jpg") 1x);
-    background-image: image-set(url("../img/contents/fone/main-fon-mobile@2x.webp") 2x, url("../img/contents/fone/main-fon-mobile.jpg") 1x);
+    background-image: -webkit-image-set(url("../img/contents/fone/main-fon-mobile.jpg") 1x, url("../img/contents/fone/main-fon-mobile@2x.webp") 1x);
+    background-image: image-set(url("../img/contents/fone/main-fon-mobile.jpg") 1x, url("../img/contents/fone/main-fon-mobile@2x.webp") 1x);
   }
 
   .navigation {
@@ -2211,8 +2211,8 @@ button,
     padding-top: 59px;
     padding-bottom: 65px;
     background-image: url("../img/contents/fone/form-mobile.jpg");
-    background-image: -webkit-image-set(url("../img/contents/fone/form-mobile.webp") 1x, url("../img/contents/fone/form-mobile.jpg") 1x);
-    background-image: image-set(url("../img/contents/fone/form-mobile.webp") 1x, url("../img/contents/fone/form-mobile.jpg") 1x);
+    background-image: -webkit-image-set(url("../img/contents/fone/form-mobile.jpg") 1x, url("../img/contents/fone/form-mobile.webp") 1x);
+    background-image: image-set(url("../img/contents/fone/form-mobile.jpg") 1x, url("../img/contents/fone/form-mobile.webp") 1x);
   }
 
   .reservation .container {
@@ -2326,14 +2326,14 @@ button,
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .top-wrapper {
     background-image: url("../img/contents/fone/main-fon-mobile@2x.jpg");
-    background-image: -webkit-image-set(url("../img/contents/fone/main-fon-mobile@2x.webp") 2x, url("../img/contents/fone/main-fon-mobile@2x.jpg") 2x);
-    background-image: image-set(url("../img/contents/fone/main-fon-mobile@2x.webp") 2x, url("../img/contents/fone/main-fon-mobile@2x.jpg") 2x);
+    background-image: -webkit-image-set(url("../img/contents/fone/main-fon-mobile@2x.jpg") 2x, url("../img/contents/fone/main-fon-mobile@2x.webp") 2x);
+    background-image: image-set(url("../img/contents/fone/main-fon-mobile@2x.jpg") 2x, url("../img/contents/fone/main-fon-mobile@2x.webp") 2x);
   }
 
   .reservation {
-    background-image: url("../img/contents/fone/form-mobile@2x.webp");
-    background-image: -webkit-image-set(url("../img/contents/fone/form-mobile@2x.webp") 2x, url("../img/contents/fone/form-mobile@2x.jpg") 2x);
-    background-image: image-set(url("../img/contents/fone/form-mobile@2x.webp") 2x, url("../img/contents/fone/form-mobile@2x.jpg") 2x);
+    background-image: url("../img/contents/fone/form-mobile@2x.jpg");
+    background-image: -webkit-image-set(url("../img/contents/fone/form-mobile@2x.jpg") 2x, url("../img/contents/fone/form-mobile@2x.webp") 2x);
+    background-image: image-set(url("../img/contents/fone/form-mobile@2x.jpg") 2x, url("../img/contents/fone/form-mobile@2x.webp") 2x);
   }
 }
 

@@ -1,7 +1,7 @@
 .top-wrapper {
   background-color: $color-tangaroa;
   background-image: url("../img/contents/fone/main-fon.jpg");
-  background-image: image-set(url("../img/contents/fone/main-fon.webp") 1x, url("../img/contents/fone/main-fon.jpg") 1x);
+  background-image: image-set(url("../img/contents/fone/main-fon.jpg") 1x, url("../img/contents/fone/main-fon.webp") 1x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -10,28 +10,28 @@
   @media (min-width: 1024px) {
     @include retina {
       background-image: url("../img/contents/fone/main-fon@2x.jpg");
-      background-image: image-set(url("../img/contents/fone/main-fon@2x.webp") 2x, url("../img/contents/fone/main-fon@2x.jpg") 2x);
+      background-image: image-set(url("../img/contents/fone/main-fon@2x.jpg") 2x, url("../img/contents/fone/main-fon@2x.webp") 2x);
     }
   }
 
   @include vp-1023 {
     filter: none;
     background-image: url("../img/contents/fone/main-fon-tablet.jpg");
-    background-image: image-set(url("../img/contents/fone/main-fon-tablet.webp") 1x, url("../img/contents/fone/main-fon-tablet.jpg") 1x);
+    background-image: image-set(url("../img/contents/fone/main-fon-tablet.jpg") 1x, url("../img/contents/fone/main-fon-tablet.webp") 1x);
 
     @include retina {
       background-image: url("../img/contents/fone/main-fon-tablet@2x.jpg");
-      background-image: image-set(url("../img/contents/fone/main-fon-tablet@2x.webp") 2x, url("../img/contents/fone/main-fon-tablet@2x.jpg") 2x);
+      background-image: image-set(url("../img/contents/fone/main-fon-tablet@2x.jpg") 2x, url("../img/contents/fone/main-fon-tablet@2x.webp") 2x);
     }
   }
 
   @include vp-767 {
     background-image: url("../img/contents/fone/main-fon-mobile.jpg");
-    background-image: image-set(url("../img/contents/fone/main-fon-mobile@2x.webp") 2x, url("../img/contents/fone/main-fon-mobile.jpg") 1x);
+    background-image: image-set(url("../img/contents/fone/main-fon-mobile.jpg") 1x, url("../img/contents/fone/main-fon-mobile@2x.webp") 1x);
 
     @include retina {
       background-image: url("../img/contents/fone/main-fon-mobile@2x.jpg");
-      background-image: image-set(url("../img/contents/fone/main-fon-mobile@2x.webp") 2x, url("../img/contents/fone/main-fon-mobile@2x.jpg") 2x);
+      background-image: image-set(url("../img/contents/fone/main-fon-mobile@2x.jpg") 2x, url("../img/contents/fone/main-fon-mobile@2x.webp") 2x);
     }
   }
 }
