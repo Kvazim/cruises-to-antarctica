@@ -30,9 +30,9 @@
 <body>
   <div class="wrapper">
     <div class="top-wrapper">
-      <header class="header nojs" data-header>
+      <header class="header nojs is-open" data-header>
         <div class="container">
-          <nav class="header__navigation navigation is-open" data-navigation>
+          <nav class="header__navigation navigation">
             <a class="navigation__logo" aria-current="page">
               <svg class="navigation__icon" width="70" height="38" viewBox="0 0 70 38" role="img" aria-hidden="true">
                 <use xlink:href="./img/sprite_auto.svg#logo"></use>
@@ -42,16 +42,16 @@
             <div class="navigation-wrapper">
               <ul class="navigation__list">
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#advantages" data-scroll>Преимущества</a>
+                  <a class="navigation__link" href="#advantages" data-scroll data-menu>Преимущества</a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#cruises" data-scroll>Направления</a>
+                  <a class="navigation__link" href="#cruises" data-scroll data-menu>Направления</a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#cruises" data-scroll>Ближайшие круизы</a>
+                  <a class="navigation__link" href="#cruises" data-scroll data-menu>Ближайшие круизы</a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#contacts" data-scroll>Контакты</a>
+                  <a class="navigation__link" href="#contacts" data-scroll data-menu>Контакты</a>
                 </li>
               </ul>
             </div>
@@ -400,10 +400,10 @@
               и&nbsp;сэкономьте до&nbsp;50%</p>
           </div>
           <div class="reservation__form form-wrapper">
-            <form action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
+            <form action="https://echo.htmlacademy.ru" method="get" autocomplete="on">
               <p>Оставьте заявку<br>&nbsp;и&nbsp;мы свяжемся с вами в ближайшее время</p>
               <label class="visually-hidden" for="user">Введите Ваше имя</label>
-              <input type="text" name="user" placeholder="имя" id="user" minlength="1" pattern="[A-Za-zА-Яа-яЁё]+$"
+              <input type="text" name="user" placeholder="имя" id="user" minlength="1" pattern="[A-Za-zА-Яа-яЁё\s\-]+$"
                 required>
               <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
               <input type="tel" name="tel" id="tel" placeholder="телефон" pattern="\+?[0-9\s\-\(\)]+" required>

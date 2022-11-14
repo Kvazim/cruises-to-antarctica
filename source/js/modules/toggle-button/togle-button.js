@@ -1,27 +1,53 @@
 import {ScrollLock} from '../../utils/scroll-lock';
+import {header} from '../nojs/nojs';
 
-const headerNavigation = document.querySelector('[data-navigation]');
 const navigationToggle = document.querySelector('[data-navigation-toggle]');
+const buttonsMenu = document.querySelectorAll('[data-menu]');
 const promo = document.querySelector('.promo');
 
 const scrollLock = new ScrollLock();
 
-const createIndents = () => {
+const openMenu = () => {
+  navigationToggle.classList.add('is-active');
+  header.classList.add('is-open');
+  promo.style.marginTop = '62px';
+  scrollLock.disableScrolling();
+  window.addEventListener('mousedown', onWindowClick);
+  addLinkClick();
+};
 
-  if (headerNavigation.classList.contains('is-open')) {
-    promo.style.marginTop = '62px';
-    scrollLock.disableScrolling();
-  } else {
-    promo.style.marginTop = null;
-    scrollLock.enableScrolling();
-  }
+const closeMenu = () => {
+  navigationToggle.classList.remove('is-active');
+  header.classList.remove('is-open');
+  promo.style.marginTop = null;
+  scrollLock.enableScrolling();
+  window.removeEventListener('mousedown', onWindowClick);
+  removeLinkClick();
 };
 
 const onToggleClick = () => {
-  navigationToggle.classList.toggle('is-active');
-  headerNavigation.classList.toggle('is-open');
-  createIndents();
+  if (!navigationToggle.classList.contains('is-active')) {
+    openMenu();
+    return;
+  } else {
+    closeMenu();
+    return;
+  }
 };
+
+const addLinkClick = () => {
+  buttonsMenu.forEach((buttonMenu) => buttonMenu.addEventListener('click', closeMenu));
+};
+
+const removeLinkClick = () => {
+  buttonsMenu.forEach((buttonMenu) => buttonMenu.removeEventListener('click', closeMenu));
+};
+
+const onWindowClick = ((e) => {
+  if (e.target !== header && !header.contains(e.target)) {
+    closeMenu();
+  }
+});
 
 const initToggle = () => {
   if (navigationToggle) {
@@ -39,4 +65,4 @@ const breakpointChecker = () => {
 };
 breakpointToggle.addListener(breakpointChecker);
 
-export {initToggle, headerNavigation};
+export {initToggle};
