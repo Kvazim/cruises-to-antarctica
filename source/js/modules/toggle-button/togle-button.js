@@ -14,7 +14,7 @@ const openMenu = () => {
   promo.style.marginTop = '62px';
   scrollLock.disableScrolling();
   window.addEventListener('mousedown', onWindowClick);
-  addLinkClick();
+  // addLinkClick();
 };
 
 const closeMenu = () => {
@@ -23,7 +23,7 @@ const closeMenu = () => {
   promo.style.marginTop = null;
   scrollLock.enableScrolling();
   window.removeEventListener('mousedown', onWindowClick);
-  removeLinkClick();
+  // removeLinkClick();
 };
 
 const onToggleClick = () => {
@@ -36,13 +36,13 @@ const onToggleClick = () => {
   }
 };
 
-const addLinkClick = () => {
-  buttonsMenu.forEach((buttonMenu) => buttonMenu.addEventListener('click', closeMenu));
-};
+// const addLinkClick = () => {
+//   buttonsMenu.forEach((buttonMenu) => buttonMenu.addEventListener('click', closeMenu));
+// };
 
-const removeLinkClick = () => {
-  buttonsMenu.forEach((buttonMenu) => buttonMenu.removeEventListener('click', closeMenu));
-};
+// const removeLinkClick = () => {
+//   buttonsMenu.forEach((buttonMenu) => buttonMenu.removeEventListener('click', closeMenu));
+// };
 
 const onWindowClick = ((e) => {
   if (e.target !== navigation && !navigation.contains(e.target)) {
@@ -60,8 +60,10 @@ const breakpointToggle = window.matchMedia('(min-width:768px)');
 const breakpointChecker = () => {
   if (breakpointToggle.matches) {
     navigationToggle.removeEventListener('click', onToggleClick);
+    buttonsMenu.forEach((buttonMenu) => buttonMenu.removeEventListener('click', closeMenu));
   } else {
     navigationToggle.addEventListener('click', onToggleClick);
+    buttonsMenu.forEach((buttonMenu) => buttonMenu.addEventListener('click', closeMenu));
   }
 };
 breakpointToggle.addListener(breakpointChecker);
