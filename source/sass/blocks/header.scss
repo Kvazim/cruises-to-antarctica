@@ -30,5 +30,8 @@
   @include vp-767 {
     position: static;
     width: 100%;
+    min-height: 100%;
+    height: auto;
+    padding: 0;
   }
 }
