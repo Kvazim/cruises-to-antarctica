@@ -2,6 +2,7 @@ import {ScrollLock} from '../../utils/scroll-lock';
 import {header} from '../nojs/nojs';
 
 const navigationToggle = document.querySelector('[data-navigation-toggle]');
+const navigation = document.querySelector('[data-navigation]');
 const buttonsMenu = document.querySelectorAll('[data-menu]');
 const promo = document.querySelector('.promo');
 
@@ -44,7 +45,7 @@ const removeLinkClick = () => {
 };
 
 const onWindowClick = ((e) => {
-  if (e.target !== header && !header.contains(e.target)) {
+  if (e.target !== navigation && !navigation.contains(e.target)) {
     closeMenu();
   }
 });

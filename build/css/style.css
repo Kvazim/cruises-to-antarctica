@@ -1018,6 +1018,7 @@ button,
 .advantages {
   padding-top: 110px;
   padding-bottom: 120px;
+  background-color: rgba(227, 236, 246, 0.9);
   background: url("../img/contents/fone/advanteges.webp"), rgba(227, 236, 246, 0.9);
   background-blend-mode: color;
   background-repeat: no-repeat;
@@ -2114,6 +2115,7 @@ button,
     height: 100%;
     padding: 20px 15px;
     background-color: #f9fbfd;
+    overflow: auto;
   }
 
   .navigation-wrapper {

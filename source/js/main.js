@@ -1,9 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {removeNoJs} from './modules/nojs/nojs';
+import {initToggle} from './modules/toggle-button/togle-button';
 import './modules/smooth-scroll/smooth-scroll';
 import {initMap} from './modules/map/map';
-import {initToggle} from './modules/toggle-button/togle-button';
 
 // ---------------------------------
 
